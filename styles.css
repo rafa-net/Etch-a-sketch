@@ -3,6 +3,7 @@
 * {
   font-family: 'Ubuntu Sans', sans-serif;
 }
+
 #allFlexContainer {
   display: flex;
   flex-direction: column;
@@ -16,7 +17,6 @@
   margin: 0 auto;
   padding: 10px;
 }
-
 
 #squareContainer {
   display: flex;
@@ -66,10 +66,6 @@
   padding: 0;
   border: 0;
 }
-
-
-
-
 
 /* TODO: Add borders for container visualization 
 Know that the grid can't be created statically i.e. using a loop that takes in a fixed number 
