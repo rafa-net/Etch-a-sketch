@@ -4,6 +4,10 @@ const container = document.getElementById("squareContainer");
 function createNewGrid(size) {
     // Clears the container so there are no overlaps
     container.innerHTML = "";
+    // MAX SQUAREES!!
+    if (size >= 100 || size <= 0) {
+      size = 100;
+    }
     // As long as the iteration variable is smaller than the result of 5 x 5, 16 x 16, increment it, so more squares are added
     for (let i = 0; i < size * size; i++) {
     let square = document.createElement("div");

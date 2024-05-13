@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  font-family: 'Ubuntu Sans', sans-serif;
+}
+#allFlexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+#pageTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
 #squareContainer {
+  display: flex;
   border: 2px solid purple;
   display: flex;
   flex-wrap: wrap;
-  width: 600px; /* Fixed width for the container */
-  height: 600px; /* Fixed height for the container */
-  max-width: 100%; /* Allow container to be responsive */
-  max-height: 100%; /* Allow container to be responsive */
+  width: 600px; /* fixed width */
+  height: 600px; 
+  max-width: 100%; /* responsiveness */
+  max-height: 100%; 
   margin: 0 auto;
   padding: 0;
+}
+
+#resize-btn {
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: yellowgreen;
+  color: black;
+  box-shadow: -2px 2px 2px black;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resize-btn:hover {
+  background-color: green;
+  color: white;
+  animation: bigToSmall 0.3s;
+}
+
+@keyframes bigToSmall {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
 }
 
 .square {
