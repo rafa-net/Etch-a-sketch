@@ -1,3 +1,11 @@
+#squareContainer {
+  border: 2px dashed purple;
+}
+
+
+
+
+
 /* TODO: Add borders for container visualization 
 Know that the grid can't be created statically i.e. using a loop that takes in a fixed number 
 The squares change sizes: how? `calc()`? Variables? 
