@@ -2,9 +2,11 @@ const container = document.getElementById("squareContainer");
 
 function createNewGrid(size) {
     container.innerHTML = "";
+    
     if (size >= 100 || size <= 0) {
       size = 100;
     }
+
     for (let i = 0; i < size * size; i++) {
     let square = document.createElement("div");
     square.classList.add("square");
@@ -12,6 +14,7 @@ function createNewGrid(size) {
     square.style.height = `${100 / size}%`;
     container.appendChild(square);
   }
+
   function getRandomColor() {
     let red = Math.floor(Math.random() * 256); 
     let green = Math.floor(Math.random() * 256);
@@ -23,7 +26,6 @@ function createNewGrid(size) {
 
     return color;
   }
-    
     const squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
       square.addEventListener("mouseover", () => {

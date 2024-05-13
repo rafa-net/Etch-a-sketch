@@ -4,6 +4,10 @@
   font-family: 'Ubuntu Sans', sans-serif;
 }
 
+html {
+  background-color: beige;
+}
+
 #allFlexContainer {
   display: flex;
   flex-direction: column;
