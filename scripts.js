@@ -8,3 +8,20 @@ for (let i = 0; i < 272; i++) {
   });
   div.appendChild(square);
 }
+
+function reset() {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach((square) => {
+    square.style.backgroundColor = "blue";
+  });
+}
+
+resetBtn.addEventListener("click", reset);
+
+resizeBtn.addEventListener("click", () => {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach((square) => {
+    square.style.width = "20px";
+    square.style.height = "20px";
+  });
+});

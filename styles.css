@@ -8,7 +8,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 288px;
-  height: 240px;
+  height: auto;
   margin: 50vh auto;
   padding: 0;
 }
