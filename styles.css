@@ -1,13 +1,17 @@
-#squareContainer {  
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+html {
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+#squareContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  width: 288px;
+  height: 240px;
+  margin: 50vh auto;
   padding: 0;
-  border-radius: 5px;
+}
 
 .square {
   background-color: blue;
