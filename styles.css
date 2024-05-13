@@ -47,7 +47,7 @@
 #resize-btn:hover {
   background-color: green;
   color: white;
-  animation: bigToSmall 0.3s;
+  animation: bigToSmall 0.3s forwards;
 }
 
 @keyframes bigToSmall {

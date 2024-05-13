@@ -16,11 +16,22 @@ function createNewGrid(size) {
     square.style.height = `${100 / size}%`;
     container.appendChild(square);
   }
+  function getRandomColor() {
+    let red = Math.floor(Math.random() * 256); 
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    
+    // concatenate using padStart to ensure each component has at least 2 digits and get this conversor to hexademical
+    let color = "#" + 
+      red.toString(16).padStart(2, '0') + green.toString(16).padStart(2, '0') + blue.toString(16).padStart(2, '0');
+      // this should be a whole color in hexadecimal format
+    return color;
+  }
     // Add event listeners to the squares
     const squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
       square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "black";
+        square.style.backgroundColor = getRandomColor();
       });
     });
 }
